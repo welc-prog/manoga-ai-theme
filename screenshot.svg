@@ -1,0 +1,60 @@
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f472b6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(99, 102, 241, 0.1)" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="900" fill="url(#grid)"/>
+
+  <!-- Glowing orbs -->
+  <circle cx="200" cy="200" r="150" fill="rgba(99, 102, 241, 0.15)" filter="blur(60px)"/>
+  <circle cx="1000" cy="700" r="200" fill="rgba(6, 182, 212, 0.15)" filter="blur(80px)"/>
+  <circle cx="600" cy="450" r="100" fill="rgba(244, 114, 182, 0.1)" filter="blur(40px)"/>
+
+  <!-- Central brain icon -->
+  <circle cx="600" cy="380" r="120" fill="url(#accent)" opacity="0.9"/>
+  <circle cx="600" cy="380" r="160" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.5"/>
+  <circle cx="600" cy="380" r="200" fill="none" stroke="url(#pink)" stroke-width="1" opacity="0.3"/>
+
+  <!-- Brain icon (simplified) -->
+  <path d="M560 380 Q560 340 590 340 Q620 340 620 370 Q650 370 650 400 Q650 430 620 430 Q620 420 600 420 Q580 420 580 430 Q550 430 550 400 Q550 370 560 380 Z" fill="white" opacity="0.9" transform="translate(10, -10)"/>
+
+  <!-- Logo text -->
+  <text x="600" y="560" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="white" text-anchor="middle">Manoga</text>
+  <text x="600" y="560" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="url(#accent)" text-anchor="middle" dx="180">AI</text>
+
+  <!-- Tagline -->
+  <text x="600" y="620" font-family="Inter, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">Vibecoding • AI Consulting • Workshops</text>
+
+  <!-- Decorative elements -->
+  <rect x="400" y="680" width="400" height="4" rx="2" fill="url(#accent)" opacity="0.5"/>
+
+  <!-- Version badge -->
+  <rect x="520" y="720" width="160" height="40" rx="20" fill="rgba(99, 102, 241, 0.2)" stroke="url(#accent)" stroke-width="1"/>
+  <text x="600" y="747" font-family="JetBrains Mono, monospace" font-size="14" fill="#818cf8" text-anchor="middle">WordPress Theme</text>
+
+  <!-- Floating nodes -->
+  <circle cx="150" cy="400" r="8" fill="#06b6d4"/>
+  <circle cx="1050" cy="300" r="6" fill="#f472b6"/>
+  <circle cx="300" cy="700" r="10" fill="#6366f1"/>
+  <circle cx="900" cy="150" r="7" fill="#06b6d4"/>
+  <circle cx="100" cy="600" r="5" fill="#f472b6"/>
+  <circle cx="1100" cy="500" r="9" fill="#818cf8"/>
+</svg>
